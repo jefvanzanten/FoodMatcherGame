@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FoodMatcher.Android</name>
+    </assembly>
+    <members>
+        <member name="T:BejeweledFood.Shared.SpriteLoader">
+            <summary>
+            Caches loaded textures to prevent duplicate loading
+            </summary>
+        </member>
+        <member name="M:BejeweledFood.Shared.SpriteLoader.Load(System.String)">
+            <summary>
+            Loads a texture from cache or content pipeline
+            </summary>
+        </member>
+        <member name="M:BejeweledFood.Shared.SpriteLoader.Clear">
+            <summary>
+            Clears all cached textures
+            </summary>
+        </member>
+    </members>
+</doc>
