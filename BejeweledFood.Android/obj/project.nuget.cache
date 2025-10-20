@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "Dw5w7Kumfz0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jvanz\\dev\\c#\\MonoGame\\BejeweledFood\\BejeweledFood.Android\\BejeweledFood.Android.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jvanz\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.21\\microsoft.net.illink.tasks.8.0.21.nupkg.sha512",
+    "C:\\Users\\jvanz\\.nuget\\packages\\monogame.content.builder.task\\3.8.4.1\\monogame.content.builder.task.3.8.4.1.nupkg.sha512",
+    "C:\\Users\\jvanz\\.nuget\\packages\\monogame.framework.android\\3.8.4.1\\monogame.framework.android.3.8.4.1.nupkg.sha512",
+    "C:\\Users\\jvanz\\.nuget\\packages\\monogame.library.openal\\1.24.3.2\\monogame.library.openal.1.24.3.2.nupkg.sha512",
+    "C:\\Users\\jvanz\\.nuget\\packages\\microsoft.android.runtime.34.android-x64\\34.0.154\\microsoft.android.runtime.34.android-x64.34.0.154.nupkg.sha512",
+    "C:\\Users\\jvanz\\.nuget\\packages\\microsoft.android.runtime.34.android-arm64\\34.0.154\\microsoft.android.runtime.34.android-arm64.34.0.154.nupkg.sha512",
+    "C:\\Users\\jvanz\\.nuget\\packages\\microsoft.android.ref.34\\34.0.154\\microsoft.android.ref.34.34.0.154.nupkg.sha512",
+    "C:\\Users\\jvanz\\.nuget\\packages\\microsoft.android.runtime.34.android-arm\\34.0.154\\microsoft.android.runtime.34.android-arm.34.0.154.nupkg.sha512",
+    "C:\\Users\\jvanz\\.nuget\\packages\\microsoft.android.runtime.34.android-x86\\34.0.154\\microsoft.android.runtime.34.android-x86.34.0.154.nupkg.sha512"
+  ],
+  "logs": []
+}
