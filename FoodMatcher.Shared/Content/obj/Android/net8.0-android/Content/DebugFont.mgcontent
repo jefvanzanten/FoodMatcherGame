@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/jvanz/dev/c#/MonoGame/BejeweledFood/FoodMatcher.Shared/Content/DebugFont.spritefont</SourceFile>
+  <SourceFile>C:/Users/jvanz/dev/c#/MonoGame/FoodMatcher/FoodMatcher.Shared/Content/DebugFont.spritefont</SourceFile>
   <SourceTime>2025-10-20T12:56:10.4228208+02:00</SourceTime>
-  <DestFile>C:/Users/jvanz/dev/c#/MonoGame/BejeweledFood/FoodMatcher.Shared/Content/bin/Android/Content/DebugFont.xnb</DestFile>
-  <DestTime>2025-10-20T18:47:22.9903492+02:00</DestTime>
+  <DestFile>C:/Users/jvanz/dev/c#/MonoGame/FoodMatcher/FoodMatcher.Shared/Content/bin/Android/Content/DebugFont.xnb</DestFile>
+  <DestTime>2025-10-23T20:30:27.5608929+02:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2025-06-02T12:31:02+02:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>

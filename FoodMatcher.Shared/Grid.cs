@@ -82,8 +82,8 @@ namespace BejeweledFood.Shared
                 if (AreAdjacent(SelectedCell.Value, clickedCell))
                 {
                     SwapCells(SelectedCell.Value, clickedCell);
-                    
-                    if(IsAdjacentMatch(clickedCell) || IsAdjacentMatch(SelectedCell.Value))
+
+                    if (IsAdjacentTriple(clickedCell) || IsAdjacentTriple(SelectedCell.Value))
                     {
                         Debug.WriteLine("Matching neighbours are found.");
 
@@ -94,7 +94,12 @@ namespace BejeweledFood.Shared
                         // Scan for triples
                         ScanForTriples();
                     }
-      
+
+                    else
+                    {
+                        SwapCells(clickedCell, SelectedCell.Value);
+                    } 
+
                     SelectedCell = null;
                 }
                 else
@@ -229,31 +234,21 @@ namespace BejeweledFood.Shared
             }
         }
 
-        private bool IsAdjacentMatch(Point p)
+        private bool IsAdjacentTriple(Point p)
         {
-            int center = Map[p.X, p.Y];
+            int value = Map[p.X, p.Y];
 
-            // Check horizontal (west - center - east)
-            if (p.X >= 1 && p.X < Cols - 1)
-            {
-                int west = Map[p.X - 1, p.Y];
-                int east = Map[p.X + 1, p.Y];
-                if (center == west && center == east)
-                {
-                    return true;
-                }
-            }
+            // Check horizontal: left-left-center, left-center-right, center-right-right
+            if ((p.X >= 2 && Map[p.X - 1, p.Y] == value && Map[p.X - 2, p.Y] == value) ||
+                (p.X >= 1 && p.X < Cols - 1 && Map[p.X - 1, p.Y] == value && Map[p.X + 1, p.Y] == value) ||
+                (p.X < Cols - 2 && Map[p.X + 1, p.Y] == value && Map[p.X + 2, p.Y] == value))
+                return true;
 
-            // Check vertical (north - center - south)
-            if (p.Y >= 1 && p.Y < Rows - 1)
-            {
-                int north = Map[p.X, p.Y - 1];
-                int south = Map[p.X, p.Y + 1];
-                if (center == north && center == south)
-                {
-                    return true;
-                }
-            }
+            // Check vertical: up-up-center, up-center-down, center-down-down
+            if ((p.Y >= 2 && Map[p.X, p.Y - 1] == value && Map[p.X, p.Y - 2] == value) ||
+                (p.Y >= 1 && p.Y < Rows - 1 && Map[p.X, p.Y - 1] == value && Map[p.X, p.Y + 1] == value) ||
+                (p.Y < Rows - 2 && Map[p.X, p.Y + 1] == value && Map[p.X, p.Y + 2] == value))
+                return true;
 
             return false;
         }
@@ -262,6 +257,7 @@ namespace BejeweledFood.Shared
         {
             int dx = Math.Abs(a.X - b.X);
             int dy = Math.Abs(a.Y - b.Y);
+
             return (dx == 1 && dy == 0) || (dx == 0 && dy == 1);
         }
 

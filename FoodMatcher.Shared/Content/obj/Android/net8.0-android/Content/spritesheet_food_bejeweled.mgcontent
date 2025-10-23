@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/jvanz/dev/c#/MonoGame/BejeweledFood/FoodMatcher.Shared/Content/spritesheet_food_bejeweled.png</SourceFile>
+  <SourceFile>C:/Users/jvanz/dev/c#/MonoGame/FoodMatcher/FoodMatcher.Shared/Content/spritesheet_food_bejeweled.png</SourceFile>
   <SourceTime>2025-10-20T15:28:05.2943607+02:00</SourceTime>
-  <DestFile>C:/Users/jvanz/dev/c#/MonoGame/BejeweledFood/FoodMatcher.Shared/Content/bin/Android/Content/spritesheet_food_bejeweled.xnb</DestFile>
-  <DestTime>2025-10-20T18:47:23.0033693+02:00</DestTime>
+  <DestFile>C:/Users/jvanz/dev/c#/MonoGame/FoodMatcher/FoodMatcher.Shared/Content/bin/Android/Content/spritesheet_food_bejeweled.xnb</DestFile>
+  <DestTime>2025-10-23T20:30:27.5839237+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2025-06-02T12:31:02+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
